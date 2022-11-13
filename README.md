@@ -4,11 +4,11 @@ UI, API and Load Test All in One Boiler plate (Using seleniumxappium, restassure
 ## Simulation
 RESTAssured Simulation
 
-![API](API.gif)
+![API](screens/API.gif)
 
 Selenium Simulation
 
-![UI](ui.gif)
+![UI](screens/ui.gif)
 
 ## Framework Used
 

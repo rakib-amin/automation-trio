@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'io.gatling.gradle' version '3.8.4'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.rest-assured:rest-assured:5.2.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.4.0'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.2.0'
+    // https://mvnrepository.com/artifact/org.json/json
+    implementation group: 'org.json', name: 'json', version: '20090211'
+    // https://mvnrepository.com/artifact/io.appium/java-client
+    implementation group: 'io.appium', name: 'java-client', version: '2.2.0'
+
+}
+
+gatling {
+    logHttp = 'FAILURES'
+}
+
+test {
+    useJUnitPlatform()
+}
