@@ -26,5 +26,5 @@ Selenium Simulation
 
 ## Warning
 
-This project is for demo purpose only. Simply cloning this repo won't yield anything
+This project is for demo purpose only. Simply cloning this repo won't yield anything. What I wanted to show is if you have a small project/application to test, you can keep everything under single repo. 
 
